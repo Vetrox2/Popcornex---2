@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Popcornex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Popcornex Landing Page">
+    <meta name="keywords" content="Popcorn, Popcornex, Popcorn Maker">
+    <meta name="author" content="Mateusz Mulka">
+</head>
+<body>
+
+    <nav class="Menu">
+        <div class="Menu_Nav">
+            <a href="#1" class="H_Large">Home</a>
+            <a href="#2" class="H_Large">Product</a>
+            <a href="#3" class="H_Large">Why us</a>
+            <a href="#4" class="H_Large">Contact</a>
+        </div>
+    </nav>
+    <nav class="Menu">
+        <div class="Menu_Frame">
+            <img class="Logo" src="logo.png" alt="logo"/>
+            <img class="Burger" src="burger.svg" alt=""/>
+            <a href="" class="Button"><p>CHECK NOW</p></a>
+        </div>
+    </nav>
+
+    <nav class="Menu_Desktop">
+        <div class="Menu_Frame">
+            <img class="Logo" src="logo.png" alt="logo"/>
+            <div class="Menu_Nav_Desktop">
+                <a href="#1" class="H_Large">Home</a>
+                <a href="#2_1" class="H_Large">Product</a>
+                <a href="#3_1" class="H_Large">Why us</a>
+                <a href="#4" class="H_Large">Contact</a>
+                <a href="" class="Button"><p>CHECK NOW</p></a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const burger = document.querySelector('.Burger');
+        const nav = document.querySelector('.Menu_Nav');
+        let toggle = false;
+
+        burger.addEventListener('click', () => {
+            nav.style.transform = nav.style.transform === 'translateY(0%)'
+                ? 'translateY(100%)'
+                : 'translateY(0%)';
+        });
+        burger.addEventListener('click', () => {
+            if (toggle) {
+                burger.setAttribute('src', 'burger.svg');
+            } else {
+                burger.setAttribute('src', 'close.svg');
+            }
+
+            toggle = !toggle;
+        });
+
+
+    </script>
+
+    <div class="Content" id="1">
+        <!--Section 1-->
+        <div class="Section1" >
+            <div class="Section1_1">
+                <h1 class="H_Large">NEW GENERATION OF POPCORN MAKERS</h1>
+                <h2  class="H_Medium_H">Don't let bad popcorn spoil your day</h2>
+                <a href="" class="Button"><p>CHECK NOW</p></a>
+            </div>
+            <img src="img1.png" class="img1" alt="Popcorn Maker"/>
+        </div>
+        <!--Pasek 1-->
+        <div class="pasek1" >
+            <div class="pasek1_1">
+                <div class="Frame1_2">
+                    <p class="T_Large">20</p>
+                    <p class="T_Medium" id="2_1">years on market</p>
+                </div>
+                <div class="Frame1_2">
+                    <p class="T_Large">10000</p>
+                    <p class="T_Medium">sold products</p>
+                </div>
+                <div class="Frame1_2">
+                    <p class="T_Large">50</p>
+                    <p class="T_Medium">unique patents</p>
+                </div>
+            </div>
+        </div>
+        <!--Section 2-->
+        <div class="Section2" id="2">
+            <div class="Section2_1">
+                <h2 class="H_Medium">How does it work?</h2>
+                <p class="T_Small">Donec auctor purus massa, vel pretium neque consectetur eget. Aliquam at nunc id ante tincidunt tristique. </p>
+                <a href="" class="Button"><p>CHECK NOW</p></a>
+            </div>
+            <div class="Frame2">
+                <div class="Frame2_1">
+                    <div class="Frame2_1_1">
+                        <span class="sl1">1</span>
+                        <span class="st1">Place a spoon of kernels into the main chamber</span>
+
+                    </div>
+                    <img src="img2.png" alt="kernels into maker"/>
+                </div>
+                <div class="Frame2_2">
+                    <img src="img3.png" alt="switch on" />
+                    <div class="Frame2_2_1">
+                        <span class="sl1">2</span>
+                        <span class="st1">Turn on the device and wait for 3-4 minutes</span>
+                    </div>
+
+                </div>
+                <div class="Frame2_3">
+                    <div class="Frame2_3_1">
+                        <span class="sl1">3</span>
+                        <span class="st1">Popcorn will dispense, so keep the bowl close</span>
+                    </div>
+                    <img src="img4.png" alt="ready popcorn"/>
+                </div>
+                <a href="" class="Button"><p>CHECK NOW</p></a>
+            </div>
+        </div>
+        <!--Pasek 2-->
+        <div class="pasek2" id="3_1">
+            <div class="pasek2_1">
+                <p class="T_Large">BEST POPCORN POPPERS</p>
+            </div>
+        </div>
+        <!--Section 3-->
+        <div class="Section3" id="3">
+            <div class="Section3_1">
+                <h2 class="H_Medium">Why choose us?</h2>
+                <p class="T_Small">Phasellus ultricies porta purus, et ultricies dui vestibulum non. Mauris dapibus nunc id pharetra.</p>
+                <a href="" class="Button"><p>CHECK NOW</p></a>
+            </div>
+            <img src="img5.png" class="img5" alt="people eating popcorn"/>
+        </div>
+        <!--Opinions-->
+        <div class="Section4" id="5">
+            <h2 class="H_Medium">Opinions</h2>
+            <div class="Opinions">
+                <div class="Op_Frame-1">
+                    <h2 class="H_Medium">Gordon Ramsey</h2>
+                    <img src="ramsey.png" alt="Gordon Ramsey"/>
+                    <div class="Op_Frame_2">
+                        <h2 class="H_Medium">9/10</h2>
+                        <p class="T_Small">I asked the question and I got the answer</p>
+                    </div>
+                </div>
+                <div class="Op_Frame-2">
+                    <h2 class="H_Medium">Famous Gourmet</h2>
+                    <img src="roberto.png" alt="Robert Gourmet"/>
+                    <div class="Op_Frame_2">
+                        <h2 class="H_Medium">10/10</h2>
+                        <p class="T_Small">The best popcorn maker I have ever seen</p>
+                    </div>
+                </div>
+                <div class="Op_Frame-3">
+                    <h2 class="H_Medium">Robert Makłowicz</h2>
+                    <img src="makło.png" alt="Makłowicz"/>
+                    <div class="Op_Frame_2">
+                        <h2 class="H_Medium">11/10</h2>
+                        <p class="T_Small">Even better than dill</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="Footer_zew">
+            <div class="Footer" id="4">
+                <!--Socials-->
+                <div class="Footer_1">
+                    <div class="Socials">
+                        <h2 class="H_Medium">Socials</h2>
+                        <div></div>
+                    </div>
+                    <div class="Footer_Content">
+                        <div class="Footer_Frame">
+                            <img src="fb.svg" alt="fb" />
+                            <a href="https://www.facebook.com/Cooperativa/photos/basw.AbqMiJRqhcXvz_T-DvF8U2NKjSEzOGbFmyBae_IKuBmKXeKxL_g1LlTvuSnnFkwY7CgyDNqDR4WLCYjJ9oMhT_BeHegetmUQmICTBDNrXeyXWlrrfa8eD5IYXBHgsKBxJIZxELwtmkw9Uyv6yJ6__9sz/10154468397195895/?opaqueCursor=AbrLXTsDBolerCYDNjaIw5en7j3fOE32L3ya2ygusEECjz6G3BJuDnahX_Zy6aEuh0Z1wyAuvNPRp7acleTVOirtiEE9V4A8CdGbNo4mGY0SxOptP3qESL-bAnjCY0z1_PuTPoxv9p0A5Tv4Tw65KLKr5tqQwmwjceJyYY9I4YLvFASi3bHd3M0EyhsnNWh1rC_HTquKVkIdSKqSBNRJ9mv6S3lbJpGlcna3gbyvaCzoP800K9PbiSgeOTQqD1TmW_MDV_tHAHfTxx9Ve6Ybc2hqptmZU3KM3-WjCVeooKWwg1a7jxu3TfF0jXeBd4zTL1tT2qb7u9qxKEFIsbDebFxGppSwpePROukALM0A55SUm3ASNwBsNCH6Wbp7Ys0guThUbHvINVV-_qjgQ0KuDG4_aZDCyH2iAfDx80YY-siTe44MLpzg53X6g6-GF8CZa_SpAhLpeRL3r42OqNz2nT6vhl-wO0M7vGO5Lt7uztzD6FcQTts1-3Z3PFhesKkof25Qdh8F2Vwlc0yoMEwICxS5K69Kv4pWcqJpPpezJQELjYd-xznvTTUvdcSTBUYKI5yoxw-60lr0c4TmwO51UpOBptd-v_3RvkswEJzd7QcBdqbnvBt0R7E2tmCZjhpjLS6aIR5DFDEjJaPjWssYby1vvEcxd5Y6ouuOHroiZPOsSk3DNo_zz06tvv8fwaZ9FVNOhH7-gdnKO3X7bzATv63p0V5dWBYzaQ4M5CNXqYyivyMLU2SLR8e7iW7n78ozDGt0UnzPAKMuV66PHMAxqrLRfUjjUDZyjlWpDOlk8WziHQTurRDbEjpdQiSd-X78MuWLDAAjsjbbUP4fNGJumu5FLVQd5lG2PT2qwY0ef458LpVK5BbGpfeNJB7hwUvovzdDZaB4FTE9v9bXdVDvduyCjACo069G4pyGPqu_nSSAHA" target="_blank" class=T_Small>Facebook</a>
+                        </div>
+                        <div class="Footer_Frame">
+                            <img src="ig.svg" alt="ig" />
+                            <a href="https://www.instagram.com/waldemarbialy16/" target="_blank" class="T_Small">Instagram</a>
+                        </div>
+                        <div class="Footer_Frame">
+                            <img src="tw.svg" alt="twitter" />
+                            <a href="https://twitter.com/bettercallsaul_" target="_blank" class="T_Small">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <!--About us-->
+                <div class="Footer_1">
+                    <div class="Socials">
+                        <h2 class="H_Medium">About Us</h2>
+                        <div></div>
+                    </div>
+                    <div class="Footer_Content">
+                        <p class="T_Small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor ullamcorper odio non sollicitudin. Cras imperdiet risus est. Curabitur non nulla at ipsum auctor feugiat. </p>
+                    </div>
+                </div>
+                <!--Contant Info-->
+                <div class="Footer_1">
+                    <div class="Socials">
+                        <h2 class="H_Medium">Contact Info</h2>
+                        <div></div>
+                    </div>
+                    <div class="Footer_Content">
+                        <div class="Footer_Frame">
+                            <img src="mail.svg" alt="e-mail" />
+                            <p class="T_Small">popcornex@contact.com</p>
+                        </div>
+                        <div class="Footer_Frame">
+                            <img src="phone.svg" alt="phone" />
+                            <p class="T_Small">+1 629-346-1047</p>
+                        </div>
+                        <div class="Footer_Frame">
+                            <img class="Loc" src="location.svg" alt="location" />
+                            <p class="T_Small1">12000 – 12100 Coors Rd SW, Albuquerque, NM 87045</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
